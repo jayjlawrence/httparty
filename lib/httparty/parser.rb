@@ -110,7 +110,7 @@ module HTTParty
     end
 
     def json
-      JSON.load(body, nil)
+      JSON.load(body.strip, nil)
     end
 
     def html
